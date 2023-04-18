@@ -1,0 +1,9 @@
+.agreement {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 20px;
+
+  input[type="checkbox"] {
+    border: 1px solid $disabled;
+  }
+}

@@ -1,0 +1,11 @@
+.footer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  border-top: $border;
+  font-size: 0.7rem;
+
+  .container {
+    height: 100%;
+  }
+}

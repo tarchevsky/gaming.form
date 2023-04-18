@@ -1,0 +1,45 @@
+.quiz
+    form#form.form(action='#' method='POST')
+        .quiz__row.row
+            .quiz__item
+                .quiz-heading 
+                    h1 Нейроигротека
+                    .quiz-heading__brain
+                        img(src="../img/brain.jpg")
+                p Спасибо, что Вы с нами! Мы только оттачиваем формат нейроигротеки и хотим стать лучше! Ваш отзыв поможет нам понять, в какую сторону двигаться. Поделитесь впечатлением?
+                div Понравилось?
+                .quiz-question.mini
+                    .quiz-question__grid
+                        label(for='enjoy') Да
+                        input.enjoy(type='radio' name='enjoy' value='Да')
+                    .quiz-question__grid
+                        label(for='enjoy') Не очень
+                        input.enjoy(type='radio' name='enjoy' value='Не очень')
+                label(for='likedorno') Расскажите, что понравилось, что не очень
+                .quiz-question
+                    textarea.likedorno(placeholder="Что понравилось, а что не очень" name="likedorno")
+                label(for='most') Что понравилось больше всего?
+                .quiz-question
+                    textarea.most(placeholder="Что понравилось больше всего?" name="most")
+                label(for='mostno') Что не понравилось больше всего?
+                .quiz-question
+                    textarea.mostno(placeholder="Что не понравилось больше всего?" name="mostno")
+                .quiz-question
+                    label(for='onegame') Какая игра запомнилась больше всего?
+                    input.onegame(placeholder="Назовите игру" name="onegame")
+                label(for='benefit') Было ли вам полезно данное мероприятие? Если да, то чем?
+                .quiz-question
+                    textarea.benefit(placeholder="Какую пользу Вы получили?" name="benefit")
+                label(for='somechanges') Есть ли что-то, что вы бы хотели изменить в Нейроигротеке, чтобы она была  более эффективной?
+                .quiz-question
+                    textarea.somechanges(placeholder="Что можно было бы изменить?" name="somechanges")
+                label(for='recommendations') Как и кому бы вы порекомендовали Нейроигротеку?
+                .quiz-question
+                    textarea.recommendations(placeholder="Как и кому бы вы порекомендовали Нейроигротеку?" name="recommendations")
+                label(for='more') Есть ли что-то, что хотелось бы добавить? 
+                .quiz-question
+                    textarea.more(placeholder="Добавите что-нибудь?" name="more")
+                .navigation
+                    .navigation__next
+                    input#submit.submit(type='submit' value='Отправить')
+            .quiz__item

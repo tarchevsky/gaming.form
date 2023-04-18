@@ -1,0 +1,30 @@
+.privacy-policy {
+  ol {
+    list-style: none;
+    counter-reset: li;
+
+    li {
+      &::before {
+        content: counters(li, '.') '. ';
+        display: revert;
+        top: revert;
+        left: revert;
+        width: revert;
+        height: revert;
+        background-color: revert;
+        border-radius: revert;
+        counter-increment: li;
+      }
+    }
+  }
+
+  ul {
+    li {
+      list-style-type: circle;
+
+      &::before {
+        content: ''
+      }
+    }
+  }
+}
